@@ -3,6 +3,12 @@ Pixo is a Retro Styled Theme for CTFd which consists of numerous features like O
 
 Compatible with CTFd **Version 3.3.0**
 
+Modified by f00001111
+
+Compatible with CTFd **Version 3.6.0**
+
+Translated by f00001111 in `cn` branch
+
 Few Screenshots:
   
   ![Index Page](https://i.imgur.com/lL7zYrg.gif "Index Page")
