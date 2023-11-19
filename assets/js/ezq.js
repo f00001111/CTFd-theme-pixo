@@ -8,7 +8,7 @@ const modalTpl =
   '    <div class="modal-content">' +
   '      <div class="modal-header">' +
   '        <h5 class="modal-title">{0}</h5>' +
-  '        <button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
+  '        <button type="button" class="close" data-dismiss="modal" aria-label="关闭">' +
   '          <span aria-hidden="true">&times;</span>' +
   "        </button>" +
   "      </div>" +
@@ -24,7 +24,7 @@ const toastTpl =
   '<div class="toast m-3" role="alert">' +
   '  <div class="toast-header">' +
   '    <strong class="mr-auto">{0}</strong>' +
-  '    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">' +
+  '    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="关闭">' +
   '      <span aria-hidden="true">&times;</span>' +
   "    </button>" +
   "  </div>" +
@@ -39,24 +39,24 @@ const progressTpl =
 
 const errorTpl =
   '<div class="alert alert-danger alert-dismissable" role="alert">\n' +
-  '  <span class="sr-only">Error:</span>\n' +
+  '  <span class="sr-only">错误:</span>\n' +
   "  {0}\n" +
-  '  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>\n' +
+  '  <button type="button" class="close" data-dismiss="alert" aria-label="关闭"><span aria-hidden="true">×</span></button>\n' +
   "</div>";
 
 const successTpl =
   '<div class="alert alert-success alert-dismissable submit-row" role="alert">\n' +
-  "  <strong>Success!</strong>\n" +
+  "  <strong>成功!</strong>\n" +
   "  {0}\n" +
-  '  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>\n' +
+  '  <button type="button" class="close" data-dismiss="alert" aria-label="关闭"><span aria-hidden="true">×</span></button>\n' +
   "</div>";
 
 const buttonTpl =
   '<button type="button" class="btn btn-primary" data-dismiss="modal">{0}</button>';
 const noTpl =
-  '<button type="button" class="btn btn-danger" data-dismiss="modal">No</button>';
+  '<button type="button" class="btn btn-danger" data-dismiss="modal">否</button>';
 const yesTpl =
-  '<button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>';
+  '<button type="button" class="btn btn-primary" data-dismiss="modal">是</button>';
 
 export function ezAlert(args) {
   const modal = modalTpl.format(args.title);

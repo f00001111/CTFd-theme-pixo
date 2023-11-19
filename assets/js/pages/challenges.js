@@ -20,9 +20,9 @@ const loadChal = id => {
 
   if (chal.type === "hidden") {
     ezAlert({
-      title: "Challenge Hidden!",
-      body: "You haven't unlocked this challenge yet!",
-      button: "Got it!"
+      title: "题目被隐藏!",
+      body: "你还没有解锁这道题!",
+      button: "知道了!"
     });
     return;
   }
@@ -186,7 +186,7 @@ function renderSubmissionResponse(response) {
             .split(" ")[0]
         ) +
           1 +
-          " Solves"
+          " 已解出"
       );
     }
 
@@ -239,7 +239,7 @@ function markSolves() {
 function getSolves(id) {
   return CTFd.api.get_challenge_solves({ challengeId: id }).then(response => {
     const data = response.data;
-    $(".challenge-solves").text(parseInt(data.length) + " Solves");
+    $(".challenge-solves").text(parseInt(data.length) + " 已解出");
     const box = $("#challenge-solves-names");
     box.empty();
     for (let i = 0; i < data.length; i++) {
@@ -380,16 +380,16 @@ setInterval(update, 300000); // Update every 5 minutes.
 
 const displayHint = data => {
   ezAlert({
-    title: "Hint",
+    title: "提示",
     body: data.html,
-    button: "Got it!"
+    button: "知道了!"
   });
 };
 
 const displayUnlock = id => {
   ezQuery({
-    title: "Unlock Hint?",
-    body: "Are you sure you want to open this hint?",
+    title: "解锁提示?",
+    body: "你确定要打开这个提示吗?",
     success: () => {
       const params = {
         target: id,
@@ -405,9 +405,9 @@ const displayUnlock = id => {
         }
 
         ezAlert({
-          title: "Error",
+          title: "错误",
           body: response.errors.score,
-          button: "Got it!"
+          button: "知道了!"
         });
       });
     }

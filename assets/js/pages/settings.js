@@ -6,16 +6,16 @@ import { ezAlert, ezQuery } from "../ezq";
 
 const error_template =
   '<div class="alert alert-danger alert-dismissable" role="alert">\n' +
-  '  <span class="sr-only">Error:</span>\n' +
+  '  <span class="sr-only">错误:</span>\n' +
   "  {0}\n" +
-  '  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>\n' +
+  '  <button type="button" class="close" data-dismiss="alert" aria-label="关闭"><span aria-hidden="true">×</span></button>\n' +
   "</div>";
 
 const success_template =
   '<div class="alert alert-success alert-dismissable submit-row" role="alert">\n' +
-  "  <strong>Success!</strong>\n" +
-  "   Your profile has been updated\n" +
-  '  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>\n' +
+  "  <strong>成功!</strong>\n" +
+  "   你的个人信息已经更新\n" +
+  '  <button type="button" class="close" data-dismiss="alert" aria-label="关闭"><span aria-hidden="true">×</span></button>\n' +
   "</div>";
 
 function profileUpdate(event) {
@@ -68,7 +68,7 @@ function tokenGenerate(event) {
     .then(function(response) {
       if (response.success) {
         let body = $(`
-        <p>Please copy your API Key, it won't be shown again!</p>
+        <p>请复制你的API Key, 它不会再次显示!</p>
         <div class="input-group mb-3">
           <input type="text" id="user-token-result" class="form-control" value="${
             response.data.value
@@ -84,9 +84,9 @@ function tokenGenerate(event) {
           copyToClipboard(event, "#user-token-result");
         });
         ezAlert({
-          title: "API Key Generated",
+          title: "API Key已经生成",
           body: body,
-          button: "Got it!",
+          button: "知道了!",
           large: true
         });
       }
@@ -99,8 +99,8 @@ function deleteToken(event) {
   const id = $elem.data("token-id");
 
   ezQuery({
-    title: "Delete Token",
-    body: "Are you sure you want to delete this token?",
+    title: "删除令牌",
+    body: "你确定要删除这个令牌吗?",
     success: function() {
       CTFd.fetch("/api/v1/tokens/" + id, {
         method: "DELETE"

@@ -104,7 +104,7 @@ $(() => {
       let integration = JSON.parse(event.newValue);
       if (integration["name"] == "mlc") {
         $("#integration-mlc")
-          .text("Already Configured")
+          .text("已经配置")
           .attr("disabled", true);
         window.focus();
         localStorage.removeItem("integrations");

@@ -46,8 +46,8 @@ $(() => {
 
     $(".disband-team").click(function() {
       ezQuery({
-        title: "Disband Team",
-        body: "Are you sure you want to disband your team?",
+        title: "解散队伍",
+        body: "你确定要解散队伍吗?",
         success: function() {
           CTFd.fetch("/api/v1/teams/me", {
             method: "DELETE"
@@ -60,9 +60,9 @@ $(() => {
                 window.location.reload();
               } else {
                 ezAlert({
-                  title: "Error",
+                  title: "错误",
                   body: response.errors[""].join(" "),
-                  button: "Got it!"
+                  button: "知道了!"
                 });
               }
             });
@@ -106,9 +106,9 @@ $(() => {
           if (!object.success) {
             const error_template =
               '<div class="alert alert-danger alert-dismissable" role="alert">\n' +
-              '  <span class="sr-only">Error:</span>\n' +
+              '  <span class="sr-only">错误:</span>\n' +
               "  {0}\n" +
-              '  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>\n' +
+              '  <button type="button" class="close" data-dismiss="alert" aria-label="关闭"><span aria-hidden="true">×</span></button>\n' +
               "</div>";
             Object.keys(object.errors).map(function(error) {
               let i = form.find("input[name={0}]".format(error));

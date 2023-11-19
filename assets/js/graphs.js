@@ -9,7 +9,7 @@ const graph_configs = {
       let option = {
         title: {
           left: "center",
-          text: "Score over Time"
+          text: "随时间推移得分"
         },
         tooltip: {
           trigger: "axis",
@@ -112,7 +112,7 @@ const graph_configs = {
       let option = {
         title: {
           left: "center",
-          text: "Category Breakdown"
+          text: "类别细分"
         },
         tooltip: {
           trigger: "item"
@@ -132,7 +132,7 @@ const graph_configs = {
         },
         series: [
           {
-            name: "Category Breakdown",
+            name: "类别细分",
             type: "pie",
             radius: ["30%", "50%"],
             avoidLabelOverlap: false,
@@ -219,7 +219,7 @@ const graph_configs = {
       let option = {
         title: {
           left: "center",
-          text: "Solve Percentages"
+          text: "解题百分比"
         },
         tooltip: {
           trigger: "item"
@@ -234,11 +234,11 @@ const graph_configs = {
           orient: "vertical",
           top: "middle",
           right: 0,
-          data: ["Fails", "Solves"]
+          data: ["解题失败", "解题成功"]
         },
         series: [
           {
-            name: "Solve Percentages",
+            name: "解题百分比",
             type: "pie",
             radius: ["30%", "50%"],
             avoidLabelOverlap: false,
@@ -282,12 +282,12 @@ const graph_configs = {
             data: [
               {
                 value: fails_count,
-                name: "Fails",
+                name: "解题失败",
                 itemStyle: { color: "rgb(207, 38, 0)" }
               },
               {
                 value: solves_count,
-                name: "Solves",
+                name: "解题成功",
                 itemStyle: { color: "rgb(0, 209, 64)" }
               }
             ]

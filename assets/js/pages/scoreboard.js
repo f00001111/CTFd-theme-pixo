@@ -47,7 +47,7 @@ const buildGraphData = () => {
     const option = {
       title: {
         left: "center",
-        text: "Top 10 " + (CTFd.config.userMode === "teams" ? "Teams" : "Users")
+        text: "前 10 " + (CTFd.config.userMode === "teams" ? "队伍" : "用户")
       },
       tooltip: {
         trigger: "axis",
@@ -142,7 +142,7 @@ const createGraph = () => {
     if (option === false) {
       // Replace spinner
       graph.html(
-        '<h3 class="opacity-50 text-center w-100 justify-content-center align-self-center">No solves yet</h3>'
+        '<h3 class="opacity-50 text-center w-100 justify-content-center align-self-center">还没有解出</h3>'
       );
       return;
     }
