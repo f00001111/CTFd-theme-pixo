@@ -3,6 +3,10 @@ Pixo is a Retro Styled Theme for CTFd which consists of numerous features like O
 
 Compatible with CTFd **Version 3.3.0**
 
+Modified & Translated by f00001111
+
+CTFd pixo主题中文版，兼容CTFd 3.3.0+，模板已更新到3.6.0，已汉化模板及JavaScript
+
 Few Screenshots:
   
   ![Index Page](https://i.imgur.com/lL7zYrg.gif "Index Page")
@@ -19,9 +23,9 @@ Few Screenshots:
 ### Installation Steps:
 Open your Docker container's terminal then insert the following Command:
 ```
-git clone https://github.com/hmrserver/CTFd-theme-pixo.git /opt/CTFd/CTFd/themes/pixo
+git clone -b cn https://github.com/f00001111/CTFd-theme-pixo.git /opt/CTFd/CTFd/themes/pixo-cn
 ```
-Then Login as Admin and go to: ```Admin Panel > Config > Themes``` and switch the Theme to pixo and Click on Update.
+Then Login as Admin and go to: ```Admin Panel > Config > Themes``` and switch the Theme to pixo-cn and Click on Update.
 
 That's it! Now you are good to goo..
 
