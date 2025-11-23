@@ -26,6 +26,11 @@ Then Login as Admin and go to: ```Admin Panel > Config > Themes``` and switch th
 
 That's it! Now you are good to goo..
 
+## Tips
+1. You can remove scanning line by remove [base.html(Line 42)](/templates/base.html#L42).
+2. You can remove flicker by replace `animation:flicker .15s infinite` to `animation:none` in [main.xxxxxxxxx.css](/static/assets/main.1c8a8995.css).
+3. You can also remove flicker by remove [main.scss(Line 134)](/assets/scss/main.scss#L134) and rebuild the theme using yarn.
+
 ## Custom License
 1. User may edit the item, but can't replace My Theme Copyright & CTFd Copyright.
 1. User need confirmation with us before removing copyright mark (footer).
