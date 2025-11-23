@@ -1,0 +1,95 @@
+/* Challenge styles
+-------------------------------------------------- */
+
+.challenge-desc {
+  overflow-wrap: anywhere;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.challenge-button {
+  border: none;
+  box-shadow: 3px 3px 3px grey;
+  background-color: #2378c0 !important;
+  border-color: #2378c0 !important;
+}
+
+.challenge-button:hover {
+  background-color: #ff0e66 !important;
+  border-color: #8f0034 !important
+}
+
+.challenge-button span:before {
+  background-image: url(../img/coin.png);
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  content: '';
+  background-size: cover;
+  margin: 0 4px -3px 0
+}
+
+.challenge-charts-box {
+  padding: 40px 0 40px 0;
+  margin-top: 10px;
+  margin-bottom: 20px
+}
+
+.challenge-submit {
+  background: #ff0e66 !important;
+  color: #fff !important;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, .5);
+  border: 0 !important;
+}
+
+.challenge-submit:active {
+  transform: scale(.9);
+  opacity: .9
+}
+
+.challenge-tag {
+  background-color: #2492ef !important;
+  text-transform: uppercase
+}
+
+.challenge-name {
+  color: #ff0e66;
+  text-shadow: unset;
+  font-size: 1rem
+}
+
+.challenge-value:before {
+  background-image: url(../img/coin.png);
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  content: '';
+  background-size: cover;
+  margin: 0 -5px -5px 0
+}
+
+.challenge-input {
+  color: #fff;
+}
+
+.challenge-solved {
+  background-color: #01c569 !important;
+  opacity: .8;
+  border: none !important;
+}
+
+.challenge-solved:hover {
+  background-color: #37d63e !important;
+}
+
+.corner-button-check {
+  margin-right: 25px;
+  position: absolute;
+  right: 0;
+}

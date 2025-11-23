@@ -1,0 +1,27 @@
+/* Graph styles
+-------------------------------------------------- */
+
+#score-graph {
+  min-height: 400px;
+}
+
+#score-graph>div>canvas,
+.challenge-charts {
+  background: transparent;
+  color: #fff;
+}
+
+#solves-graph {
+  display: block;
+  height: 350px;
+}
+
+#keys-pie-graph {
+  min-height: 400px;
+  display: block;
+}
+
+#categories-pie-graph {
+  min-height: 400px;
+  display: block;
+}
